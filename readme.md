@@ -12,7 +12,7 @@ go get -u github.com/frozzare/go-healthchecks
 
 ## Example
 
-```
+```go
 package main
 
 import (
