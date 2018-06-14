@@ -1,7 +1,5 @@
 # go-healthchecks [![Build Status](https://travis-ci.org/frozzare/go-healthchecks.svg?branch=master)](https://travis-ci.org/frozzare/go-healthchecks) [![GoDoc](https://godoc.org/github.com/frozzare/go-healthchecks?status.svg)](http://godoc.org/github.com/frozzare/go-healthchecks) [![Go Report Card](https://goreportcard.com/badge/github.com/frozzare/go-healthchecks)](https://goreportcard.com/report/github.com/frozzare/go-healthchecks)
 
-Max is a YAML-based task runner with Docker support.
-
 Simple http client api for [healthchecks.io](https://healthchecks.io)
 
 ## Installation
