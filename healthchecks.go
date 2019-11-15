@@ -51,6 +51,11 @@ func (c *Client) Fail(ctx context.Context, id string) error {
 	return c.get(ctx, fmt.Sprintf("%s/fail", c.createURL(id)))
 }
 
+// Start sends a start request to Healthchecks.io to indicate that the job has started.
+func (c *Client) Start(ctx context.Context, id string) error {
+	return c.get(ctx, fmt.Sprintf("%s/start", c.createURL(id)))
+}
+
 func (c *Client) createURL(id string) string {
 	url := c.url
 
