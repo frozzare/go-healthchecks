@@ -23,14 +23,17 @@ import (
 func main() {
 	client := healthchecks.NewClient(nil)
 
-	err := client.Success(context.Background(), "your-uuid-here")
+	err := client.Start(context.Background(), "your-uuid-here")
+	if err != nil {
+		log.Fatal(err)
+	}
 
+	err := client.Success(context.Background(), "your-uuid-here")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	err = client.Fail(context.Background(), "your-uuid-here")
-
 	if err != nil {
 		log.Fatal(err)
 	}
