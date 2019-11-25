@@ -16,6 +16,10 @@ func TestHealthchecks(t *testing.T) {
 
 	c := NewClient(nil, server.URL)
 
+	if err := c.Start(context.Background(), "test-id"); err != nil {
+		t.Fatal(err)
+	}
+
 	if err := c.Success(context.Background(), "test-id"); err != nil {
 		t.Fatal(err)
 	}
